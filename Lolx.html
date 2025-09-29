@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:3000/index.html -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./Lolx_files/___vscode_livepreview_injected_script"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lolx</title> 
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 30px;
+        }
+
+        /* Título principal do site (Lolx) */
+        .titulo-lolx {
+            font-size: 2.5em;
+            color: #00e5ff;
+            text-align: center;
+            margin-bottom: 50px;
+            text-shadow: 0 0 10px rgba(0, 229, 255, 0.6), 
+                         0 0 20px rgba(0, 229, 255, 0.4); 
+        }
+
+        /* Container Lado a Lado */
+        .container {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        /* Bloco de Conteúdo (Nexus e Steam) */
+        .bloco-download {
+            flex: 1; 
+            padding: 20px;
+            border: 1px solid #444444; 
+            border-radius: 8px;
+            background-color: #111111; 
+            word-wrap: break-word; 
+        }
+        
+        /* Bloco do Plugin (Ocupa a largura total) */
+        .bloco-plugin {
+            padding: 20px;
+            border: 1px solid #444444; 
+            border-radius: 8px;
+            background-color: #111111; 
+            word-wrap: break-word; 
+            margin-top: 20px;
+        }
+
+        /* Novo Bloco do Tutorial */
+        .bloco-tutorial {
+            padding: 30px 20px;
+            border: 1px solid #444444; 
+            border-radius: 8px;
+            background-color: #111111; 
+            margin-top: 20px;
+            line-height: 1.6; 
+        }
+        
+        .bloco-tutorial h3 {
+            color: #ffcc00; 
+            text-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
+            margin-bottom: 15px;
+        }
+
+        /* Imagem do Tutorial */
+        .tutorial-image {
+            display: block;
+            max-width: 100%; /* Garante que a imagem não saia da tela */
+            height: auto;
+            border: 2px solid #00e5ff; /* Borda para destacar a captura de tela */
+            border-radius: 5px;
+            margin: 25px auto 0; /* Centraliza a imagem */
+        }
+        
+        /* Estilo para código de linha única (PowerShell) */
+        .bloco-tutorial code {
+            background-color: #333333;
+            color: #00ff00;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: monospace;
+            display: block;
+            margin: 10px 0;
+            word-wrap: break-word;
+            white-space: pre-wrap;
+        }
+        
+        /* Estilos dos links e créditos (mantidos) */
+        h1, h2, h3 { margin-top: 0; margin-bottom: 5px; line-height: 1.2; }
+        a { color: #00e5ff; text-decoration: none; transition: color 0.3s; text-shadow: 0 0 5px rgba(0, 229, 255, 0.4); }
+        a:hover { color: #ffcc00; text-shadow: 0 0 10px rgba(255, 204, 0, 0.8); }
+        .url-texto { display: block; font-size: 0.9em; color: #888888; margin-top: 5px; opacity: 0.8; }
+        .creditos { font-size: 1em; color: #ffffff; margin-top: 15px; text-shadow: 0 0 5px rgba(255, 255, 255, 0.3); }
+        .creditos strong { color: #ffffff; margin-right: 5px; }
+        .tutorial-lista { list-style-type: none; padding-left: 0; }
+    </style>
+</head>
+<body>
+
+    <h1 class="titulo-lolx">Web Links by: Lolx</h1>
+
+    <div class="container">
+        <div class="bloco-download">
+            <h1><a href="https://www.mediafire.com/file/qrt82t86akwsi7q/Nexus.zip/file" target="_blank">Nexus Download</a></h1>
+            <span class="url-texto">https://www.mediafire.com/file/qrt82t86akwsi7q/Nexus.zip/file</span>
+            <p class="creditos"><strong>Créditos:</strong> vassiliev</p>
+        </div>
+        <div class="bloco-download">
+            <h2><a href="https://www.steamtools.net/" target="_blank">Steam tools</a></h2>
+            <span class="url-texto">https://www.steamtools.net/</span>
+            <p class="creditos">&nbsp;</p>
+        </div>
+    </div>
+
+    <div class="bloco-plugin">
+        <h3><a href="https://unethicalcdn.com/manilua%20(Plugin%20va3.1.0).zip" target="_blank">Plugin</a></h3>
+        <span class="url-texto">https://unethicalcdn.com/manilua%20(Plugin%20va3.1.0).zip</span>
+    </div>
+    
+    <div class="bloco-tutorial">
+        <h3>TUTORIAL: Instalação do Plugin</h3>
+        
+        <p><strong>Pré-requisitos:</strong></p>
+        <ul class="tutorial-lista">
+            <li>SteamTools instalado (desculpe, usuários do GreenLuma, por enquanto)</li>
+            <li>Millennium (instale via PowerShell - <strong style="color: #ffcc00;">MUITO IMPORTANTE!</strong>)
+                <code style="user-select: all;">iwr -useb "https://steambrew.app/install.ps1" | iex</code>
+            </li>
+            <li>Alfabetização</li>
+        </ul>
+
+        <p><strong>Instalação do Plugin:</strong></p>
+        <ol>
+            <li>Baixe o plugin (clique no título "Plugin" acima).</li>
+            <li>Acesse o diretório do Steam - Win+R, cole: <code>%ProgramFiles(x86)%\Steam</code></li>
+            <li>A pasta de **plugins** já deve existir se você instalou o Millennium; caso contrário, crie uma.</li>
+            <li>Mova o arquivo zip, **manilua (Plugin).zip**, para a pasta.</li>
+            <li>Clique com o botão direito no arquivo zip e use um dos métodos de extração:
+                <ul>
+                    <li>Se você for um usuário comum do 7-Zip, **7-Zip &gt;**, **Extraia para manilua (Plugin do Millennium)\**</li>
+                    <li>Se você não for um usuário do 7-Zip, **Extraia tudo...**, **desmarque Mostrar arquivos extraídos quando concluído** e clique em **Extrair**.</li>
+                    <li>Se você for um usuário do WinRAR, provavelmente é semelhante ao 7-Zip. Não me lembro. Cresça.</li>
+                </ul>
+            </li>
+            <li>Inicie o Steam, certifique-se de que o plugin esteja habilitado clicando em **Steam** no canto superior esquerdo do cliente, depois em **Millennium**, depois em **Plugins** e certificando-se de que o **manilua 3.1.0** esteja ativado à direita da tela. O Millennium pode solicitar que você reinicie.</li>
+        </ol>
+        <p style="margin-top: 20px; font-style: italic; color: #aaaaaa;">Deve ficar como na captura de tela abaixo:</p>
+        
+        <img src="./Lolx_files/27F90F10-D937-4C4E-93B1-D21FF7E3691F.png" alt="Captura de tela do plugin manilua no Millennium Steam" class="tutorial-image">
+        
+    </div>
+    
+</body></html>
